@@ -15,7 +15,6 @@ import Link from "next/link";
 
 //Social Media Imports
 import { GoogleLogin } from "react-google-login";
-import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
 
 import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
