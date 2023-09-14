@@ -1,23 +1,22 @@
-import React, { useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Container } from 'react-bootstrap';
-import SimpleBar from 'simplebar-react';
+import React, { useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Container } from "react-bootstrap";
+import SimpleBar from "simplebar-react";
 
-import VerticalLayout from './VerticalLayout';
-import HorizontalLayout from './HorizontalLayout';
-import TwoColumnLayout from './TwoColumnLayout';
+import VerticalLayout from "./VerticalLayout";
+import HorizontalLayout from "./HorizontalLayout";
+import TwoColumnLayout from "./TwoColumnLayout";
 
-import logosm from "../../assets/images/logo-sm.png";
-import logodark from "../../assets/images/logo-dark.png";
-import logolight from "../../assets/images/logo-light.png";
+import logosm from "../../assets/images/logo-sm.svg";
+import logodark from "../../assets/images/logo-dark.svg";
+import logolight from "../../assets/images/logo-light.svg";
 
 interface SidebarProps {
   layoutType: any;
 }
 
 const Sidebar = ({ layoutType }: SidebarProps) => {
-
   useEffect(() => {
     var verticalOverlay = document.getElementsByClassName("vertical-overlay");
     if (verticalOverlay) {
@@ -29,12 +28,20 @@ const Sidebar = ({ layoutType }: SidebarProps) => {
 
   const addEventListenerOnSmHoverMenu = () => {
     // add listener Sidebar Hover icon on change layout from setting
-    if (document.documentElement.getAttribute('data-sidebar-size') === 'sm-hover') {
-      document.documentElement.setAttribute('data-sidebar-size', 'sm-hover-active');
-    } else if (document.documentElement.getAttribute('data-sidebar-size') === 'sm-hover-active') {
-      document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
+    if (
+      document.documentElement.getAttribute("data-sidebar-size") === "sm-hover"
+    ) {
+      document.documentElement.setAttribute(
+        "data-sidebar-size",
+        "sm-hover-active"
+      );
+    } else if (
+      document.documentElement.getAttribute("data-sidebar-size") ===
+      "sm-hover-active"
+    ) {
+      document.documentElement.setAttribute("data-sidebar-size", "sm-hover");
     } else {
-      document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
+      document.documentElement.setAttribute("data-sidebar-size", "sm-hover");
     }
   };
 
@@ -78,7 +85,7 @@ const Sidebar = ({ layoutType }: SidebarProps) => {
               </ul>
             </Container>
           </div>
-        ) : layoutType === 'twocolumn' ? (
+        ) : layoutType === "twocolumn" ? (
           <React.Fragment>
             <TwoColumnLayout layoutType={layoutType} />
             <div className="sidebar-background"></div>
@@ -100,6 +107,6 @@ const Sidebar = ({ layoutType }: SidebarProps) => {
       <div className="vertical-overlay"></div>
     </React.Fragment>
   );
-}
+};
 
 export default Sidebar;
