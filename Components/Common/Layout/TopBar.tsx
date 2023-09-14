@@ -68,7 +68,7 @@ const TopBar = () => {
                 </div>
                 <div>
                   <i className="bi bi-globe align-middle me-2"></i>{" "}
-                  www.hairpin.ai
+                  https://hairpin.ai
                 </div>
               </div>
             </Col>

@@ -689,7 +689,7 @@ const SimplePage = () => {
                                       href="#"
                                       className="fw-semibold text-body"
                                     >
-                                      www.hairpin.ai
+                                      https://hairpin.ai
                                     </Link>
                                   </div>
                                 </div>
