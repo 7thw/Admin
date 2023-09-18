@@ -205,7 +205,7 @@ const Settings = () => {
                               className="form-control"
                               id="websiteInput"
                               placeholder="www.example.com"
-                              defaultValue="https://hairpin.ai"
+                              defaultValue="www.hairpin.ai"
                             />
                           </div>
                           <div className="mb-3 d-flex">
@@ -458,7 +458,7 @@ const Settings = () => {
                                   className="form-control"
                                   id="websiteInput1"
                                   placeholder="www.example.com"
-                                  defaultValue="https://hairpin.ai"
+                                  defaultValue="www.hairpin.ai"
                                 />
                               </div>
                             </Col>

@@ -237,7 +237,7 @@ const SearchModal = () => {
                   className="list-group-item dropdown-item notify-item"
                 >
                   <i className="bi bi-link-45deg me-2 align-middle"></i>{" "}
-                  <span>https://hairpin.ai</span>
+                  <span>www.hairpin.ai</span>
                 </Link>
               </div>
 

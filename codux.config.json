@@ -1,0 +1,31 @@
+{
+  "$schema": "https://wixplosives.github.io/codux-config-schema/codux.config.schema.json",
+
+  "scripts": {
+    "install": {
+      "title": "Install", 
+      "description": "Run install",
+      "command": "npm i",
+      "trigger": ["checkout", "pull", "setup"]
+    }
+  },
+
+  "newComponent": {
+    "componentsPath": "src/components" 
+  },
+
+  "componentsDiscovery": {
+    "include": ["src/**"],
+    "exclude": ["src/_codux/component-templates/**"]
+  },
+
+  "styling": {
+    "solution": "css modules"
+  },
+
+  "svgLoader": "file",
+
+  "safeRender": {
+    "maxInstancesPerComponent": 1000
+  }
+}
